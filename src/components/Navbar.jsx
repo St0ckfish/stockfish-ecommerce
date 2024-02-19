@@ -160,7 +160,7 @@ const NavBar = () => {
 
     return (
         <UserProvider>
-            <header className="bg-white sticky top-0 border-[1px] border-solid border-l-0 border-r-0 border-t-0 pt-5  mb-2 z-10">
+            <header className="bg-white sticky top-0 border-[1px] border-solid border-l-0 border-r-0 border-t-0 pt-5  mb- z-10">
                 <div className="container flex justify-between items-center mx-auto">
                     <Link
                         className="flex items-center gap-1 text-[#8CB7F5] font-bold text-2xl -translate-y-1.5 ml-7"
