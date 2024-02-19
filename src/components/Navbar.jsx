@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 // import Btn from "./Btn";
 // import Home from "../pages/Home";
 // import About from "../pages/About";
-import OffersHome from './OffersHome';
+// import OffersHome from './OffersHome';
 import { useContext } from "react";
 import { UserContext, UserProvider } from '../Context/Context';
 // import { useEffect } from "react";
@@ -52,29 +52,7 @@ const NavLinks = () => {
                             </button>
                         </form>
                     </nav>
-                    <nav className="flex -translate-y-2 max-[1024px]:hidden">
-                        <NavLink className="flex" to="">
-                            <svg className="h-8 w-8 text-gray-500" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <path d="M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7" /></svg>
-                            <div className="text-[13px] px-3 w-1 h-6 bg-[#8CB7F5] rounded-full items-center justify-center flex -translate-x-2 translate-y-3">0</div>
-                        </NavLink>
-                        <NavLink className="flex" to="">
-                            <svg
-                                className="h-8 w-8 text-gray-500"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                                />
-                            </svg>
-                            <div className="text-[13px] px-3 w-1 h-6 bg-[#8CB7F5] rounded-full items-center justify-center flex -translate-x-2 translate-y-3">{count}</div>
-                            {/* <Btn/> */}
-                        </NavLink>
-                    </nav>
+
         </UserProvider>
     )
 }
@@ -107,7 +85,7 @@ const NavLinkss = () => {
                             </button>
                         </form>
                     </nav>
-                <nav className="grid grid-cols-1  gap-10 mt-5 ">
+                <nav className="grid grid-cols-1  gap-10 mt-5 mb-4">
                         <NavLink className={({ isActive }) => isActive ? 'text-[#448ed8]' : ''} to="/">
                             Home
                         </NavLink>
@@ -121,28 +99,7 @@ const NavLinkss = () => {
                             Sign Up
                         </NavLink>
                     </nav>
-                    <nav className="flex justify-around items-center text-center mt-5 mb-4">
-                        <NavLink className="flex" to="">
-                            <svg className="h-8 w-8 text-gray-500" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <path d="M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7" /></svg>
-                            <div className="text-[13px] px-3 w-1 h-6 bg-[#8CB7F5] rounded-full items-center justify-center flex -translate-x-2 translate-y-3">0</div>
-                        </NavLink>
-                        <NavLink className="flex" to="">
-                            <svg
-                                className="h-8 w-8 text-gray-500"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                                />
-                            </svg>
-                            <div className="text-[13px] px-3 w-1 h-6 bg-[#8CB7F5] rounded-full items-center justify-center flex -translate-x-2 translate-y-3">{count}</div>
-                        </NavLink>
-                    </nav>
+
             </div>
         </UserProvider>
     )

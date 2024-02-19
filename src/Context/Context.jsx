@@ -9,7 +9,7 @@ export const UserContext = createContext(null);
 //     )
 // }
 export const UserProvider = ({ children }) => {
-    const [count, setCount] = useState(99);
+    const [count, setCount] = useState(0);
     const incremrnt = () => {
         setCount(count+1);
         console.log(count)

@@ -5,14 +5,14 @@ const HeroHome = () => {
     return (
         <>
             <div className="flex flex-wrap  justify-around max-[1025px]:gap-3">
-                <div className="grid justify-center border-[1px] border-solid border-l-0 border-b-0 border-t-0 max-[1025px]:border-r-0 max-[1200px]:text-[14px] ">
+                <div className="text-nowrap grid justify-center border-[1px] border-solid border-l-0 border-b-0 border-t-0 max-[1025px]:border-r-0 max-[1200px]:text-[14px] ">
                     <nav className="mt-16 max-[1079px]:flex max-[1025px]:overflow-x-scroll text-nowrap">
                         <NavLink className="text-nowrap mr-4 flex items-center text-center py-2 px-6 rounded-xl hover:bg-[#8cb8f533] max-[1025px]:px-2 max-[1025px]:m-0">Men's Fashion	 	</NavLink>
-                        <NavLink className="mr-4 flex items-center text-center py-2 px-6 rounded-xl hover:bg-[#8cb8f533] max-[1025px]:px-2 max-[1025px]:m-0">boys's Fashion 	</NavLink>
-                        <NavLink className="mr-4 flex items-center text-center py-2 px-6 rounded-xl hover:bg-[#8cb8f533] max-[1025px]:px-2 max-[1025px]:m-0">Electronics</NavLink>
-                        <NavLink className="mr-4 flex items-center text-center py-2 px-6 rounded-xl hover:bg-[#8cb8f533] max-[1025px]:px-2 max-[1025px]:m-0">Home & Lifesyle</NavLink>
-                        <NavLink className="mr-4 flex items-center text-center py-2 px-6 rounded-xl hover:bg-[#8cb8f533] max-[1025px]:px-2 max-[1025px]:m-0">Medicine</NavLink>
-                        <NavLink className="mr-4 flex items-center text-center py-2 px-6 rounded-xl hover:bg-[#8cb8f533] max-[1025px]:px-2 max-[1025px]:m-0">Sports & Outdoor</NavLink>
+                        <NavLink className="text-nowrap mr-4 flex items-center text-center py-2 px-6 rounded-xl hover:bg-[#8cb8f533] max-[1025px]:px-2 max-[1025px]:m-0">boys's Fashion 	</NavLink>
+                        <NavLink className="text-nowrap mr-4 flex items-center text-center py-2 px-6 rounded-xl hover:bg-[#8cb8f533] max-[1025px]:px-2 max-[1025px]:m-0">Electronics</NavLink>
+                        <NavLink className="text-nowrap mr-4 flex items-center text-center py-2 px-6 rounded-xl hover:bg-[#8cb8f533] max-[1025px]:px-2 max-[1025px]:m-0">Home & Lifesyle</NavLink>
+                        <NavLink className="text-nowrap mr-4 flex items-center text-center py-2 px-6 rounded-xl hover:bg-[#8cb8f533] max-[1025px]:px-2 max-[1025px]:m-0">Medicine</NavLink>
+                        <NavLink className="text-nowrap mr-4 flex items-center text-center py-2 px-6 rounded-xl hover:bg-[#8cb8f533] max-[1025px]:px-2 max-[1025px]:m-0">Sports & Outdoor</NavLink>
                     </nav>
                 </div>
                 <div className="flex justify-center">
