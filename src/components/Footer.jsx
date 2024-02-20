@@ -6,8 +6,9 @@ const Footer = () => {
         <>
             <footer className="relative bottom-0 ">
                 <div className="grid gap-5">
-                    <div className="grid grid-cols-6 bg-white items-center">
-                        <div className='grid pl-28 mt-7 gap-3'>
+                    <div className="grid grid-cols-6 bg-white items-center max-[1603px]:grid-cols-3 max-[950px]:grid-cols-2 max-[617px]:grid-cols-1">
+                        <div className='grid mt-7 gap-3 justify-center text-center items-center mb-10'>
+                            <div className='flex justify-center text-center items-center'>
                             <Link
                                 className="flex items-center gap-1 text-[#8CB7F5] font-bold text-2xl -translate-y-1.5 "
                                 to="/"
@@ -15,8 +16,11 @@ const Footer = () => {
                                 <img src="/images/logo.png" alt="LOGO" />
                                 Stockfish
                             </Link>
-                            <p className='text-left text-gray-500'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta soluta consectetur et nulla? Fuga optio enim minima?</p>
-                            <div className='flex gap-3 mt-2'>
+                            </div>
+                            <div className='flex justify-center text-center items-center'>
+                            <p className=' text-gray-500'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta soluta consectetur et nulla? Fuga optio enim minima?</p>
+                            </div>
+                            <div className='flex gap-3 mt-2 justify-center text-center items-center'>
                                 <a href="https://www.facebook.com/profile.php?id=100009001212190">
                                     <img src="/images/facebook.svg" className='w-7' alt="" />
                                 </a>
@@ -31,7 +35,7 @@ const Footer = () => {
                                 </a>
                             </div>
                         </div>
-                        <div className='grid justify-center gap-1'>
+                        <div className='grid justify-center gap-1 mb-10'>
                             <div className='flex justify-center items-center mb-4'>
                                 <h2 className='font-bold'>Support</h2>
                             </div>
@@ -45,7 +49,7 @@ const Footer = () => {
                                 <p className='text-gray-400'>Pricing</p>
                             </div>
                         </div>
-                        <div className='grid justify-center gap-1'>
+                        <div className='grid justify-center gap-1 mb-10'>
                             <div className='flex justify-center items-center mb-4'>
                                 <h2 className='font-bold'>Company</h2>
                             </div>
@@ -65,7 +69,7 @@ const Footer = () => {
                                 <p className='text-gray-400'>partners</p>
                             </div>
                         </div>
-                        <div className='grid justify-center gap-1'>
+                        <div className='grid justify-center gap-1 mb-10'>
                             <div className='flex justify-center items-center mb-4'>
                                 <h2 className='font-bold'>Solutions</h2>
                             </div>
@@ -82,7 +86,7 @@ const Footer = () => {
                                 <p className='text-gray-400'>Insights</p>
                             </div>
                         </div>
-                        <div className='grid justify-center gap-1'>
+                        <div className='grid justify-center gap-1 mb-10'>
                             <div className='flex justify-center items-center mb-4'>
                                 <h2 className='font-bold'>Legal</h2>
                             </div>
