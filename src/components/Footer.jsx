@@ -5,9 +5,9 @@ const Footer = () => {
     return (
         <>
             <footer className="relative bottom-0 ">
-                <div className="grid gap-5">
+                <div className="grid">
                     <div className="grid grid-cols-6 bg-white items-center max-[1603px]:grid-cols-3 max-[950px]:grid-cols-2 max-[617px]:grid-cols-1">
-                        <div className='grid mt-7 gap-3 justify-center text-center items-center mb-10'>
+                        <div className='grid mt-7 ml-10 max-[617px]:ml-0 gap-3 justify-center text-center items-center mb-10'>
                             <div className='flex justify-center text-center items-center'>
                             <Link
                                 className="flex items-center gap-1 text-[#8CB7F5] font-bold text-2xl -translate-y-1.5 "
@@ -63,9 +63,6 @@ const Footer = () => {
                                 <p className='text-gray-400'>Jobs</p>
                             </div>
                             <div className='flex justify-center'>
-                                <p className='text-gray-400'>press</p>
-                            </div>
-                            <div className='flex justify-center'>
                                 <p className='text-gray-400'>partners</p>
                             </div>
                         </div>
@@ -116,7 +113,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className=" bg-gray-200 flex justify-center ">
+                    <div className="  flex justify-center h-10 items-center ">
                         <p>	&copy; 2024 <a className=' hover:text-sky-600 text-sky-800 font-bold' href="https://mostapha-taha.vercel.app">Mostapha Taha</a></p>
                     </div>
                 </div>

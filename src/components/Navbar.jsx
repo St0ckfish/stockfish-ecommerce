@@ -5,7 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 // import About from "../pages/About";
 // import OffersHome from './OffersHome';
 import { useContext } from "react";
-import { UserContext, UserProvider } from '../Context/Context';
+import {  UserProvider } from '../Context/Context';
 // import { useEffect } from "react";
 
 
@@ -13,7 +13,7 @@ import { UserContext, UserProvider } from '../Context/Context';
 
 
 const NavLinks = () => {
-    const { count,setCount } = useContext(UserContext); // Access name directly
+    // const { count,setCount } = useContext(UserContext); // Access name directly
     // Access name directly
 
     return(
@@ -52,12 +52,36 @@ const NavLinks = () => {
                             </button>
                         </form>
                     </nav>
+                    <nav className="max-[1024px]:hidden flex justify-between -translate-y-2">
+                        <NavLink className="flex" to="/ShoppingCard">
+                            <div className="text-[13px] px-3 w-1 h-6 bg-[#8CB7F5] rounded-full items-center justify-center flex translate-x-2 translate-y-3">0</div>
+                            <svg
+                                className="h-8 w-8 text-black"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                />
+                            </svg>
+                            {/* <Btn/> */}
+                        </NavLink>
+                        <NavLink className="flex" to="/ShoppingCard">
+                            <div className="text-[13px] px-3 w-1 h-6 bg-[#8CB7F5] rounded-full items-center justify-center flex translate-x-2 translate-y-3">0</div>
+                            <svg className="h-8 w-8 text-black" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <path d="M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7" /></svg>
+                        </NavLink>
+                    </nav>
+                    
 
         </UserProvider>
     )
 }
 const NavLinkss = () => {
-       const { count } = useContext(UserContext); // Access name directly
+    //    const { count } = useContext(UserContext); // Access name directly
 
        const [isOpen, setIsOpen] = useState(true);
 
@@ -103,14 +127,36 @@ const NavLinkss = () => {
                             Sign Up
                         </NavLink>
                     </nav>
-
+                    <nav className="flex justify-between p-4">
+                        <NavLink className="flex" to="/ShoppingCard">
+                            <div className="text-[13px] px-3 w-1 h-6 bg-[#8CB7F5] rounded-full items-center justify-center flex translate-x-12 translate-y-3">0</div>
+                            <svg
+                                className="h-8 w-8 text-black"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                />
+                            </svg>
+                            {/* <Btn/> */}
+                        </NavLink>
+                        <NavLink className="flex" to="/ShoppingCard">
+                            <div className="text-[13px] px-3 w-1 h-6 bg-[#8CB7F5] rounded-full items-center justify-center flex translate-x-2 translate-y-3">0</div>
+                            <svg className="h-8 w-8 text-black" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <path d="M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7" /></svg>
+                        </NavLink>
+                    </nav>
             </div>
         </UserProvider>
     )
 }
 
 const NavBar = () => {
-    const { count } = useContext(UserContext); // Access name directly
+    // const { count } = useContext(UserContext); // Access name directly
 
 
     const [isOpen, setIsOpen] = useState(false);
@@ -121,7 +167,7 @@ const NavBar = () => {
 
     return (
         <UserProvider>
-            <header className="bg-white sticky top-0 border-[1px] border-solid border-l-0 border-r-0 border-t-0 pt-5  mb- z-10 drop-shadow-md">
+            <header className="bg-white sticky top-0 border-[1px] border-solid border-l-0 border-r-0 border-t-0 pt-5  z-10 drop-shadow-md">
                 <div className="container flex justify-between items-center mx-auto">
                     <Link
                         className="flex items-center gap-1 text-[#8CB7F5] font-bold text-2xl -translate-y-1.5 ml-7"

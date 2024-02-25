@@ -1,58 +1,44 @@
 [
     {
         "id": 1,
-        "name": "ds",
+        "name": "Iphone 11 ",
         "price": 10.99,
-        "discription": "lorem lorem",
-        "imgUrl": "/images/"
+        "discription": "GoPro HERO6 4K Action Camera - Black",
+        "imgUrl": "/images/4.png"
     },
     {
-        "id": 1,
-        "name": "ds",
+        "id": 2,
+        "name": "Iphone 11 ",
         "price": 10.99,
-        "discription": "lorem lorem",
-        "imgUrl": "/images/"
+        "discription": "GoPro HERO6 4K Action Camera - Black",
+        "imgUrl": "/images/4.png"
     },
     {
-        "id": 1,
-        "name": "ds",
+        "id": 3,
+        "name": "Iphone 11 ",
         "price": 10.99,
-        "discription": "lorem lorem",
-        "imgUrl": "/images/"
+        "discription": "GoPro HERO6 4K Action Camera - Black",
+        "imgUrl": "/images/4.png"
     },
     {
-        "id": 1,
-        "name": "ds",
+        "id": 4,
+        "name": "Iphone 11 ",
         "price": 10.99,
-        "discription": "lorem lorem",
-        "imgUrl": "/images/"
+        "discription": "GoPro HERO6 4K Action Camera - Black",
+        "imgUrl": "/images/4.png"
     },
     {
-        "id": 1,
-        "name": "ds",
+        "id": 5,
+        "name": "Iphone 11 ",
         "price": 10.99,
-        "discription": "lorem lorem",
-        "imgUrl": "/images/"
+        "discription": "GoPro HERO6 4K Action Camera - Black",
+        "imgUrl": "/images/4.png"
     },
     {
-        "id": 1,
-        "name": "ds",
+        "id": 6,
+        "name": "Iphone 11 ",
         "price": 10.99,
-        "discription": "lorem lorem",
-        "imgUrl": "/images/"
-    },
-    {
-        "id": 1,
-        "name": "ds",
-        "price": 10.99,
-        "discription": "lorem lorem",
-        "imgUrl": "/images/"
-    },
-    {
-        "id": 1,
-        "name": "ds",
-        "price": 10.99,
-        "discription": "lorem lorem",
-        "imgUrl": "/images/"
+        "discription": "GoPro HERO6 4K Action Camera - Black",
+        "imgUrl": "/images/4.png"
     }
 ]
