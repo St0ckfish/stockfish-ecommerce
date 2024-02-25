@@ -6,7 +6,7 @@ const Footer = () => {
         <>
             <footer className="relative bottom-0 ">
                 <div className="grid">
-                    <div className="grid grid-cols-6 bg-white items-center max-[1603px]:grid-cols-3 max-[950px]:grid-cols-2 max-[617px]:grid-cols-1">
+                    <div className="grid grid-cols-6 bg-black items-center max-[1603px]:grid-cols-3 max-[950px]:grid-cols-2 max-[617px]:grid-cols-1">
                         <div className='grid mt-7 ml-10 max-[617px]:ml-0 gap-3 justify-center text-center items-center mb-10'>
                             <div className='flex justify-center text-center items-center'>
                             <Link
@@ -37,7 +37,7 @@ const Footer = () => {
                         </div>
                         <div className='grid justify-center gap-1 mb-10'>
                             <div className='flex justify-center items-center mb-4'>
-                                <h2 className='font-bold'>Support</h2>
+                                <h2 className='font-bold text-white'>Support</h2>
                             </div>
                             <div className='flex justify-center'>
                                 <p className='text-gray-400'>API Status</p>
@@ -51,7 +51,7 @@ const Footer = () => {
                         </div>
                         <div className='grid justify-center gap-1 mb-10'>
                             <div className='flex justify-center items-center mb-4'>
-                                <h2 className='font-bold'>Company</h2>
+                                <h2 className='font-bold text-white'>Company</h2>
                             </div>
                             <div className='flex justify-center'>
                                 <p className='text-gray-400'>About</p>
@@ -68,7 +68,7 @@ const Footer = () => {
                         </div>
                         <div className='grid justify-center gap-1 mb-10'>
                             <div className='flex justify-center items-center mb-4'>
-                                <h2 className='font-bold'>Solutions</h2>
+                                <h2 className='font-bold text-white'>Solutions</h2>
                             </div>
                             <div className='flex justify-center'>
                                 <p className='text-gray-400'>Marketing</p>
@@ -85,7 +85,7 @@ const Footer = () => {
                         </div>
                         <div className='grid justify-center gap-1 mb-10'>
                             <div className='flex justify-center items-center mb-4'>
-                                <h2 className='font-bold'>Legal</h2>
+                                <h2 className='font-bold text-white'>Legal</h2>
                             </div>
                             <div className='flex justify-center'>
                                 <p className='text-gray-400'>Claim</p>
@@ -97,9 +97,9 @@ const Footer = () => {
                                 <p className='text-gray-400'>Terms</p>
                             </div>
                         </div>
-                        <div className='grid grid-cols-1 justify-center gap-2'>
+                        <div className='pb-3 grid grid-cols-1 justify-center gap-2'>
                             <div className='flex justify-center items-center mb-4'>
-                                <h2 className='font-bold'>Get App</h2>
+                                <h2 className='font-bold text-white'>Get App</h2>
                             </div>
                             <div className='flex justify-center'>
                                 <Link to="/">
@@ -113,7 +113,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="  flex justify-center h-10 items-center ">
+                    <div className=" bg-black border-[1px] border-[#172d42] border-b-0 border-l-0 border-r-0 text-white flex justify-center h-10 items-center ">
                         <p>	&copy; 2024 <a className=' hover:text-sky-600 text-sky-800 font-bold' href="https://mostapha-taha.vercel.app">Mostapha Taha</a></p>
                     </div>
                 </div>
