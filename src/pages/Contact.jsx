@@ -111,24 +111,6 @@ const Contact = () => {
                                 <div>
                                     <p className='font-bold'>Select Subject?</p>
                                 </div>
-                                <div className='flex gap-20 max-[744px]:grid'>
-                                    <div className='flex gap-2'>
-                                        <input value={"UI-UX"} onChange={(e) => setSubject(e.target.value)} type="radio" name="sub" id="ui" />
-                                        <label htmlFor="ui">UI UX Design</label>
-                                    </div>
-                                    <div className='flex gap-2'>
-                                        <input value={"Flutter"} onChange={(e) => setSubject(e.target.value)} type="radio" name="sub" id="flutter" />
-                                        <label htmlFor="flutter">Flutter</label>
-                                    </div>
-                                    <div className='flex gap-2'>
-                                        <input value={"Front-End"} onChange={(e) => setSubject(e.target.value)} type="radio" name="sub" id="front" />
-                                        <label htmlFor="front">Front-End</label>
-                                    </div>
-                                    <div className='flex gap-2'>
-                                        <input value={"Back-End"} onChange={(e) => setSubject(e.target.value)} type="radio" name="sub" id="back" />
-                                        <label htmlFor="back">Back-End</label>
-                                    </div>
-                                </div>
                                 <div className='flex'>
                                     <input id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required className=' w-full  outline-none border-solid border-black border-[1px] border-t-0 border-r-0 border-l-0 p-2 ' placeholder='Write Your Message...' type="text" />
                                 </div>

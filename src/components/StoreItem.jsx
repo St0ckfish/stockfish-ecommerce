@@ -1,6 +1,6 @@
 import React from 'react';
 import formatCurrency from './formatPrice';
-import { UserProvider, useShoppingCart } from '../Context/Context';
+import { UserProvider, useShoppingCart } from '../Context/CartContext';
 import { useState,useContext } from 'react';
 const StoreItem = ({ id, price, name, imgUrl, discription }) => {
     const {getItemsQuantity , increaseCartQuantity,decreaseCartQuantity ,removeItemFromCart} = useShoppingCart();
@@ -17,7 +17,7 @@ const StoreItem = ({ id, price, name, imgUrl, discription }) => {
                 <p className='text-[14px] text-slate-500 flex justify-start'>{discription}</p>
             </div>
             {quantity === 0 ? (<div className='flex justify-center'>
-                <button onClick={()=> increaseCartQuantity(console.log(id,quantity))} className='mt-3 px-24 py-1 bg-[#ecedee] rounded-md '> Add to Bag</button>
+                <button onClick={()=> increaseCartQuantity(id)} className='mt-3 px-24 py-1 bg-[#ecedee] rounded-md '> Add to Bag</button>
             </div>) : (
                 <div className='flex items-center justify-evenly'>
                     <div>

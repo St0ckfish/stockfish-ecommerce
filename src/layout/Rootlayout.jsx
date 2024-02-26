@@ -3,7 +3,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import NavBar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { UserProvider } from '../Context/Context';
+import { UserProvider } from '../Context/CartContext';
 
 
 function RootLayuot(){

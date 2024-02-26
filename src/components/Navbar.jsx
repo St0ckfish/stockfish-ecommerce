@@ -5,7 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 // import About from "../pages/About";
 // import OffersHome from './OffersHome';
 import { useContext } from "react";
-import {  UserProvider } from '../Context/Context';
+import {  UserProvider } from '../Context/CartContext';
 // import { useEffect } from "react";
 
 

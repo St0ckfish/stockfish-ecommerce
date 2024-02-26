@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import storeItems from '../data/storeitems.json'
 import StoreItem from './StoreItem';
-import { UserProvider } from '../Context/Context';
+import { UserProvider } from '../Context/CartContext';
 
 
 

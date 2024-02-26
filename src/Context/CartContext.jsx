@@ -6,11 +6,11 @@ const UserContext = createContext({});
 export const UserProvider = ({ children }) => {
     const [cartItems, setCartItems] = useState([]);
     const getItemsQuantity = (id) => {
-        return cartItems.find((item) => item.id === id)?.quantity || 0;
+        return cartItems.find((item) => item.id === id)?.quantity || 0 ;
     };
     const increaseCartQuantity = (id) => {
         setCartItems((currItems) => {
-            if (cartItems.find((item) => item.id === id) === null) {
+            if (cartItems.find((item) => item.id === id) == null) {
                 // console.log(quantity);
                 return [...currItems, { id, quantity: 1 }] ;
             }
