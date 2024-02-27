@@ -8,6 +8,8 @@ import Contact from './pages/Contact';
 import Sign from './pages/Sign';
 import Error from './pages/Error';
 import ShoppingCard from './pages/ShoppingCard';
+import Product from './pages/Product';
+import { Outlet } from 'react-router-dom';
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
@@ -25,6 +27,9 @@ const router = createBrowserRouter(
       <Route path="Contact" element={<Contact />} />
       <Route path="Sign" element={<Sign />} />
       <Route path="ShoppingCard" element={<ShoppingCard />} />
+      <Route path="Products" element={<Outlet/>} >
+        <Route path=':ProductId' element={<Product/>}/>
+      </Route>
       <Route path="*" element={<Error />} />
   </Route>
   )
