@@ -8,7 +8,7 @@ const Home = () => {
     return ( 
         <UserProvider>
             <HeroHome/>
-            <OffersHome/>
+            <OffersHome seconds={10890}/>
         </UserProvider>
     );
 }

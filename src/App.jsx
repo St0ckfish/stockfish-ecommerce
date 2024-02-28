@@ -17,6 +17,7 @@ import { Outlet } from 'react-router-dom';
 // import Home from './pages/Home';
 // import About from '../pages/About';
 // import RootLayuot from '../layout/Rootlayout';
+import AllItems from './pages/AllItems';
 
 const router = createBrowserRouter(
   
@@ -29,6 +30,9 @@ const router = createBrowserRouter(
       <Route path="ShoppingCard" element={<ShoppingCard />} />
       <Route path="Products" element={<Outlet/>} >
         <Route path=':ProductId' element={<Product/>}/>
+      </Route>
+      <Route path="Items" element={<Outlet/>} >
+        <Route path=':ItemtId' element={<AllItems/>}/>
       </Route>
       <Route path="*" element={<Error />} />
   </Route>

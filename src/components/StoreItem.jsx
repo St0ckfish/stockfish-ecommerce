@@ -19,7 +19,7 @@ const StoreItem = ({ id, price, name, imgUrl, discription }) => {
                 <p className='text-[14px] text-slate-500 flex justify-start'>{discription}</p>
             </div>
         </NavLink>
-            {quantity === 0 ? (<div className='flex justify-center'>
+            {/* {quantity === 0 ? (<div className='flex justify-center'>
                 <button onClick={()=> increaseCartQuantity(id)} className='mt-3 px-24 py-1 bg-[#ecedee] rounded-md '> Add to Bag</button>
             </div>) : (
                 <div className='flex items-center justify-evenly'>
@@ -32,7 +32,7 @@ const StoreItem = ({ id, price, name, imgUrl, discription }) => {
                         <button onClick={()=> decreaseCartQuantity(id)} className='mt-3 px-5 py-1 bg-[#5a8bee77] rounded-md '>-</button>
                     </div>
                 </div>
-            )}
+            )} */}
         </>
     );
 }
