@@ -7,6 +7,7 @@ import { useState } from 'react';
 
 const ProductItem = ({ id, price, name, imgUrl, discription, Fulldiscription }) => {
     const [isOpen, setIsOpen] = useState(true);
+    const { getItemsQuantityFav, increaseCartQuantityFav, decreaseCartQuantityFav, removeItemFromCartFav } = useShoppingCart();
 
     const toggleNavbar = () => {
         setIsOpen(!isOpen)
@@ -24,7 +25,7 @@ const ProductItem = ({ id, price, name, imgUrl, discription, Fulldiscription }) 
                         <h1 className='text-[25px] text-black font-bold flex justify-start mb-3 max-[870px]:justify-center'>{name}</h1>
                         <p className='text-[20px] flex justify-start mb-3 max-[870px]:justify-center'>{formatCurrency(price)}</p>
                         <p className='text-[14px] text-slate-500 flex justify-start mb-3 max-[870px]:justify-center' >{discription}</p>
-                        <p className='text-[14px] text-slate-500 flex min-[870px]:text-start justify-start mb-3  max-[870px]:justify-center'>{Fulldiscription}</p>
+                        <p className='text-[14px] text-slate-500 flex min-[870px]:text-start justify-start mb-3  max-[870px]:justify-center p-2'>{Fulldiscription}</p>
                         <hr className='border-[1px] '/>
                         {quantity === 0 ? (<div className='flex justify-start max-[870px]:justify-center'>
                             <button onClick={() => increaseCartQuantity(id)} className='mt-3 px-24 py-1 bg-[#ecedee] rounded-md '> Add to Bag</button>
@@ -55,7 +56,7 @@ const ProductItem = ({ id, price, name, imgUrl, discription, Fulldiscription }) 
                             </div>
                             <div className='flex items-center translate-y-1'>
                                 <button onClick={toggleNavbar} >
-                                    {isOpen ? <svg className="h-8 w-8 text-black"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round">  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg> : <img className='w-[37px]' src='/images/fav.svg' alt="fav" />}
+                                    {isOpen ? <svg onClick={()=>increaseCartQuantityFav(id)} className="h-8 w-8 text-black"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round">  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg> : <img onClick={()=>removeItemFromCartFav(id)} className='w-[37px]' src='/images/fav.svg' alt="fav" />}
                                 </button>
                             </div>
                         </div>

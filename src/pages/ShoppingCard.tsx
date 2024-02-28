@@ -1,12 +1,17 @@
 import * as React from 'react';
+import { useShoppingCart } from '../Context/CartContext';
+import ShoppingCartItem from '../components/ShoppingCartItem';
 
 
 const ShoppingCard = () => {
+    const {cartItems} = useShoppingCart();
     return (
         <>
-            <h1>
-                Shopping card
-            </h1>
+            <div>
+                {cartItems.map((item) => 
+                    <ShoppingCartItem key={item.id} {...item} />
+                )}
+            </div>
         </>
     );
 }
