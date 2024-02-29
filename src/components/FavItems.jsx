@@ -2,7 +2,7 @@ import React from 'react';
 import storeItems from '../data/storeitems.json';
 import itemss from '../data/itemss.json';
 import formatCurrency from './formatPrice';
-const ShoppingCartItem = ({ id, quantity }) => {
+const FavItems = ({ id, quantity }) => {
     const item = storeItems.find((i) => i.id === id)
     if (item == null) return null;
 
@@ -13,12 +13,6 @@ const ShoppingCartItem = ({ id, quantity }) => {
                 <div className='text-start m-8'>
                     <h1>Name: {item.name}</h1>
                     <p>Price: {formatCurrency(item.price)}</p>
-                    <div>
-                        {quantity >= 1 && <span>Number of Items: x{quantity}</span>}
-                    </div>
-                    <div>
-                        Total Price: {formatCurrency(item.price * quantity)}
-                    </div>
                 </div>
             </div>
 
@@ -26,4 +20,4 @@ const ShoppingCartItem = ({ id, quantity }) => {
     );
 }
 
-export default ShoppingCartItem;
+export default FavItems;

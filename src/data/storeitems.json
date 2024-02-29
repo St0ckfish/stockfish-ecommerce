@@ -1,42 +1,42 @@
 [
     {
         "id": 1,
-        "name": "Iphone 11 ",
-        "price": 10.99,
-        "discription": "GoPro HERO6 4K Action Camera - Black",
-        "Fulldiscription": "GoPro HERO6 4K Action Camera - Black GoPro HERO6 4K Action Camera - BlackGoPro HERO6 4K Action Camera - Black",
-        "imgUrl": "/images/4.png"
+        "name": "بن حيفا",
+        "price": 125,
+        "discription": "خمر الصالحين",
+        "Fulldiscription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, et numquam? Fuga impedit animi facere incidunt aperiam nisi.",
+        "imgUrl": "/images/hefa.jpeg"
     },
     {
         "id": 2,
-        "name": "Iphone 12 ",
-        "price": 10.99,
-        "discription": "GoPro HERO6 4K Action Camera - Black",
-        "Fulldiscription": "GoPro HERO6 4K Action Camera - Black GoPro HERO6 4K Action Camera - BlackGoPro HERO6 4K Action Camera - Black",
-        "imgUrl": "/images/4.png"
+        "name": "Vision Pro",
+        "price": 100000,
+        "discription": "Lorem ipsum dolor sit amet consectetur",
+        "Fulldiscription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, et numquam? Fuga impedit animi facere incidunt aperiam nisi.",
+        "imgUrl": "/images/vision.jpeg"
     },
     {
         "id": 3,
-        "name": "Iphone 13 ",
-        "price": 10.99,
-        "discription": "GoPro HERO6 4K Action Camera - Black",
-        "Fulldiscription": "GoPro HERO6 4K Action Camera - Black GoPro HERO6 4K Action Camera - BlackGoPro HERO6 4K Action Camera - Black",
-        "imgUrl": "/images/4.png"
+        "name": "Apple Watch",
+        "price": 15000,
+        "discription": "Lorem ipsum dolor sit amet consectetur",
+        "Fulldiscription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, et numquam? Fuga impedit animi facere incidunt aperiam nisi.",
+        "imgUrl": "/images/watch.jpeg"
     },
     {
         "id": 4,
-        "name": "Iphone 14 ",
-        "price": 10.99,
-        "discription": "GoPro HERO6 4K Action Camera - Black",
-        "Fulldiscription": "GoPro HERO6 4K Action Camera - Black GoPro HERO6 4K Action Camera - BlackGoPro HERO6 4K Action Camera - Black",
-        "imgUrl": "/images/4.png"
+        "name": "Imac",
+        "price": 82000,
+        "discription": "Lorem ipsum dolor sit amet consectetur",
+        "Fulldiscription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, et numquam? Fuga impedit animi facere incidunt aperiam nisi.",
+        "imgUrl": "/images/imac.jpeg"
     },
     {
         "id": 5,
-        "name": "Iphone 15 ",
-        "price": 10.99,
-        "discription": "GoPro HERO6 4K Action Camera - Black",
-        "Fulldiscription": "GoPro HERO6 4K Action Camera - Black GoPro HERO6 4K Action Camera - BlackGoPro HERO6 4K Action Camera - Black",
-        "imgUrl": "/images/4.png"
+        "name": "Imac",
+        "price": 90000,
+        "discription": "Lorem ipsum dolor sit amet consectetur",
+        "Fulldiscription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, et numquam? Fuga impedit animi facere incidunt aperiam nisi.",
+        "imgUrl": "/images/mac.jpeg"
     }
 ]

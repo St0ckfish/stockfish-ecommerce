@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+        const year = new Date().getFullYear();
     return (
         <>
             <footer className="relative bottom-0 ">
@@ -114,7 +115,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className=" bg-black border-[1px] border-[#172d42] border-b-0 border-l-0 border-r-0 text-white flex justify-center h-10 items-center ">
-                        <p>	&copy; 2024 <a className=' hover:text-sky-600 text-sky-800 font-bold' href="https://mostapha-taha.vercel.app">Mostapha Taha</a></p>
+                        <p>	&copy; {year} <a className=' hover:text-sky-600 text-sky-800 font-bold' href="https://mostapha-taha.vercel.app">Mostapha Taha</a></p>
                     </div>
                 </div>
             </footer>

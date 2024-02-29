@@ -9,7 +9,6 @@ const Contact = () => {
     const [lastName, setLastName] = useState('');
     const [phone, setPhone] = useState('');
     const [email, setEmail] = useState('');
-    const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
 
     const handleSubmit = async (e) => {
@@ -17,12 +16,11 @@ const Contact = () => {
 
         try {
             const emailMessage = `
-            You Have Received A New Message From Your IEEE Contact Website:
+            You Have Received A New Message From Your E-commerce Contact Website:
             <div style="background-color: #101010; color: #fbfbfb; padding: 12px">
                 <p style="margin: 0;">Name: ${firstName} ${lastName}</p>
                 <p style="margin: 12px 0;">Phone: ${phone}</p>
                 <p style="margin: 12px 0;">Email: ${email}</p>
-                <p style="margin: 12px 0;">Subject: ${subject}</p>
                 <p style="margin: 0;">Message: ${message}</p>
             </div>
         `;
@@ -31,7 +29,7 @@ const Contact = () => {
                 method: "POST",
                 body: JSON.stringify({
                     to: "freelancing_messages@hotmail.com", 
-                    subject: "Message From Your Website",
+                    subject: "Message From Your E-commerce Website",
                     message: emailMessage,
                 }),
             });
@@ -42,7 +40,6 @@ const Contact = () => {
                 setLastName('');
                 setPhone('');
                 setEmail('');
-                setSubject('');
                 setMessage('');
                 // Display a success message to the user
             } else {
@@ -59,11 +56,11 @@ const Contact = () => {
         <>
             <div className='grid justify-center items-center mt-32'>
                 <div className='grid justify-center items-center text-center'>
-                    <h1 className=' text-[30px] font-bold'>Contact <span className=' text-blue-700'>Us</span></h1>
+                    <h1 className=' text-[30px] font-bold'>Contact US</h1>
                     <p>Any question or remarks? Just write us a message!</p>
                 </div>
                 <div className='bg-white flex p-3 rounded-2xl mt-8 max-[1370px]:grid'>
-                    <div className=' bg-[#15435C] text-white grid gap-32 rounded-2xl p-7'>
+                    <div className=' bg-[#4086e9] text-white grid gap-32 rounded-2xl p-7'>
                         <div className=''>
                             <h1 className='text-[25px] font-bold'>Contact Information</h1>
                             <p className=' text-gray-300'>Say something to start a live chat!</p>
@@ -90,9 +87,6 @@ const Contact = () => {
                                 <img className='w-[30px]' src="/images/linkedin.svg" alt="" />
                             </a>
                             <a href="">
-                                <img className='w-[30px]' src="/images/instagram.svg" alt="" />
-                            </a>
-                            <a href="">
                                 <img className='w-[30px]' src="/images/facebook.svg" alt="" />
                             </a>
                         </div>
@@ -108,14 +102,11 @@ const Contact = () => {
                                     <input id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required className=' outline-none border-solid border-black border-[1px] border-t-0 border-r-0 border-l-0 p-2 ' placeholder='Email' type="email" />
                                     <input id="phone" name="phone" value={phone} onChange={(e) => setPhone(e.target.value)} required className=' outline-none border-solid border-black border-[1px] border-t-0 border-r-0 border-l-0 p-2 ' placeholder='Phone Number' type="text" />
                                 </div>
-                                <div>
-                                    <p className='font-bold'>Select Subject?</p>
-                                </div>
                                 <div className='flex'>
                                     <input id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required className=' w-full  outline-none border-solid border-black border-[1px] border-t-0 border-r-0 border-l-0 p-2 ' placeholder='Write Your Message...' type="text" />
                                 </div>
                                 <div className='flex justify-end'>
-                                    <input className=' cursor-pointer px-10 py-4 bg-blue-700 rounded-lg text-white' type="submit" value="Send Message" />
+                                    <input className=' cursor-pointer px-10 py-4 bg-[#4086e9] rounded-lg text-white' type="submit" value="Send Message" />
                                 </div>
                             </div>
                         </form>

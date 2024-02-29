@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { useContext } from "react";
 import { UserProvider, useShoppingCart } from '../Context/CartContext';
 
 
@@ -11,7 +10,7 @@ const NavBar = () => {
     const toggleNavbar = () => {
         setIsOpen(!isOpen)
     }
-    console.log(cartQuantityFav);
+    console.log("Hello bro, Close console Plz hhhhhhhh");
 
     return (
         <UserProvider>
@@ -25,7 +24,7 @@ const NavBar = () => {
                         Stockfish
                     </Link>
                     <nav className="flex gap-10 -translate-y-1.5 max-[1024px]:hidden">
-                <NavLink className={({ isActive }) => isActive ? 'text-[#448ed8]' : ''} to="/">
+                <NavLink className={({ isActive }) => isActive ? 'text-[#448ed8]' : ''}  to="/">
                     Home
                 </NavLink>
                 <NavLink className={({ isActive }) => isActive ? 'text-[#448ed8]' : ''} to="/about">
@@ -111,16 +110,16 @@ const NavBar = () => {
                     </form>
                 </nav>
                 <nav className="grid grid-cols-1  gap-10 mt-5 mb-4">
-                    <NavLink className={({ isActive }) => isActive ? 'text-[#448ed8]' : ''} to="/">
+                    <NavLink onClick={toggleNavbar}  className={({ isActive }) => isActive ? 'text-[#448ed8]' : ''} to="/">
                         Home
                     </NavLink>
-                    <NavLink className={({ isActive }) => isActive ? 'text-[#448ed8]' : ''} to="/about">
+                    <NavLink onClick={toggleNavbar} className={({ isActive }) => isActive ? 'text-[#448ed8]' : ''} to="/about">
                         About
                     </NavLink>
-                    <NavLink className={({ isActive }) => isActive ? 'text-[#448ed8]' : ''} to="/Contact">
+                    <NavLink onClick={toggleNavbar} className={({ isActive }) => isActive ? 'text-[#448ed8]' : ''} to="/Contact">
                         Contact
                     </NavLink>
-                    <NavLink className={({ isActive }) => isActive ? 'text-[#448ed8]' : ''} to="/Sign">
+                    <NavLink onClick={toggleNavbar} className={({ isActive }) => isActive ? 'text-[#448ed8]' : ''} to="/Sign">
                         Sign Up
                     </NavLink>
                 </nav>
