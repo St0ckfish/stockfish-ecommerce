@@ -124,7 +124,7 @@ const NavBar = () => {
                     </NavLink>
                 </nav>
                 <nav className="flex justify-between p-4">
-                    <NavLink className="flex" to="/ShoppingCard">
+                    <NavLink className="flex" to="/ShoppingCard" onClick={toggleNavbar}>
                         <div className="text-[13px] px-3 w-1 h-6 bg-[#8CB7F5] rounded-full items-center justify-center flex translate-x-12 translate-y-3">{cartQuantity}</div>
                         <svg
                             className="h-8 w-8 text-black"
@@ -141,7 +141,7 @@ const NavBar = () => {
                         </svg>
                         {/* <Btn/> */}
                     </NavLink>
-                    <NavLink className="flex" to="/ShoppingCard">
+                    <NavLink className="flex" to="/ShoppingCard" onClick={toggleNavbar}>
                         <div className="text-[13px] px-3 w-1 h-6 bg-[#8CB7F5] rounded-full items-center justify-center flex translate-x-2 translate-y-3">{cartQuantityFav}</div>
                         <svg className="h-8 w-8 text-black" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <path d="M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7" /></svg>
                     </NavLink>
