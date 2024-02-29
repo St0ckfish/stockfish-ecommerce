@@ -5,7 +5,7 @@ const Sign = () => {
         <>
             <div className='flex items-center justify-between max-[1314px]:grid max-[1314px]:justify-center'>
                 <div className='flex justify-center'>
-                    <img className='max-[815px]:w-[600px] max-[624px]:w-[400px]' src="/public/images/Side Image.png" alt="" />
+                    <img className='max-[815px]:w-[600px] max-[624px]:w-[400px]' src="/images/Side Image.png" alt="" />
                 </div>
                 <div className='grid mr-[300px] justify-center max-[1634px]:mr-[100px] max-[1434px]:mr-[0px] mb-10 mt-10'>
                     <h1 className='text-[27px] font-bold'>Create an account</h1>
